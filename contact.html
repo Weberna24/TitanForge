@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Titan Forge</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <p class="brandName">
+                    <a href="index.html"><img src="images/Titan Forge.png" alt=""></a>
+                </p>
+            </div>
+            <div class="navbar-toggle" id="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-links">Home</a>
+                <a href="trainers.html" class="navbar-links">Trainers</a>
+                <a href="membership.html" class="navbar-links">Membership</a>
+                <a href="contact.html" class="navbar-links">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <section class="event-section">
+        <h1 class="email-title" style="margin-bottom: 2.5rem; font-size: 3rem;">Get In Touch</h1>
+        <div class="email-container">
+            <div class="form-contact">
+                <input id="fname" type="text" placeholder="Enter first name">
+                <input id="phone" type="text" placeholder="Enter a number">
+                <input id="email" type="email" placeholder="Enter email...">
+                <textarea id="message" type="text" placeholder="How can we help"></textarea>
+                <button id="submit" onclick="sendMail()">Submit</button>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-info">
+                <h2>TITAN FORGE</h2>
+                <p>Strength is Earned, Not Given.</p>
+                <p>Sweat Together. Succeed Together.</p>
+            </div>
+        </div>
+        <a href="https://www.instagram.com/_weberna_?igsh=MWl5M2l0ZDY4bTFkOA==">Designed by Weberna</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="email.js"></script>
+    <script src="component.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "4ZDIKlTxHPGykRZbd",
+        });
+    })();
+    </script>
+</body>
+</html>
